@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #412722;
+  --secondaryColor: #dfa06e;
+  --textColor: #5c6b73;
+  --thirdColor: #bee3db;
+  --fourthColor: #b7d1da;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* Logo */
+
+.logo {
+  align-items: center;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo img {
+  width: 15rem;
+}
+
+.logo a {
+  color: var(--primaryColor);
+  font-size: 3rem;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+  position: relative; /* Setting that the navigation bar will be relative to its regular location, then we can move it based on top, left, bottom, and right */
+  overflow: auto;
+  width: 100%;
+}
+
+.nav-bar ul li {
+  list-style-type: none; /* To remove the bullets in the un-ordered list */
+}
+
+ul li a {
+  /* display: inline-block; */
+  float: left; /*To make them side by side*/
+  /* margin: 10px; To add space between them */
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  background: var(--textColor);
+  padding: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 25%;
+}
+
+ul li a:hover {
+  background: var(--secondaryColor);
+  color: black;
+}
+
+.nav-bar a.active {
+  background: var(--secondaryColor);
+  color: black;
+  text-emphasis: bolder;
+}
+
+/* Background */
+
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/background.jpg") center/cover fixed no-repeat;
+  min-height: 100vh;
+}
+
+/* Page Title */
+
+.page-title {
+  float: left;
+  position: relative;
+  font-size: 2.5rem;
+  color: #dfa06e;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+/* Homepage */
+
+.product-card {
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.product-card .house {
+  background: url(../images/house.jpg) center/cover no-repeat;
+  width: 25%;
+  height: 150px;
+  margin-right: 2%;
+  float: left;
+}
+
+.product-card .french {
+  background: url(../images/french.jpg) center/cover no-repeat;
+  width: 25%;
+  height: 150px;
+  margin-right: 2%;
+  float: left;
+}
+
+.product-card .colombian {
+  background: url(../images/colombian.jpg) center/cover no-repeat;
+  width: 25%;
+  height: 150px;
+  margin-right: 2%;
+  float: left;
+  margin-bottom: 5%;
+}
+
+.product-card h2 {
+  font-size: 2.5rem;
+  text-emphasis: bold;
+  color: #bee3db;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-card p {
+  display: block;
+  min-width: 25%;
+  max-width: 27%;
+  height: 150px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  margin-left: 0%;
+  overflow: auto;
+}
+
+.product-card p a {
+  text-decoration: none;
+  color: #dfa06e;
+}
+
+/* About Us */
+.about-us {
+  display: inline-block;
+  clear: both;
+}
+
+div.about-us p {
+  position: relative;
+  display: inline-block;
+  clear: both;
+  width: 40%;
+  text-justify: distribute;
+  margin-left: 10%;
+  text-align: left;
+  font-size: 1.75rem;
+  color: #ccc;
+  text-indent: 10%;
+}
+
+.first-para {
+  margin-top: 2%;
+}
+
+.last-para {
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+}
+
+/* Numbers Page */
+
+table {
+  position: relative;
+  width: 60%;
+  float: left;
+  clear: both;
+  margin-left: 10%;
+  margin-top: 2%;
+  text-align: center;
+  border-spacing: 25px;
+  font-size: 1.5rem;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-collapse: collapse;
+  border: 2px solid #bee3db;
+  color: white;
+}
+
+th {
+  text-emphasis: bolder;
+  font-size: 2rem;
+  background-color: var(--secondaryColor);
+}
+
+/* Contact Page */
+form {
+  width: 70%;
+  float: left;
+  clear: both;
+  margin-top: 2%;
+  margin-left: 10%;
+  font-size: 1.5rem;
+  color: #b7d1da;
+}
+
+form div {
+  padding-top: 20px;
+}
+
+input[type="text"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}
+
+input[type="email"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="email"]:focus {
+  background-color: lightblue;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  margin: 8px 0;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  display: block;
+}
+
+textarea:focus {
+  background-color: lightblue;
+}
+
+button {
+  width: 50%;
+  text-emphasis: bold;
+  font-size: 1.5rem;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Back to Top */
+
+.back-to-top a {
+  position: fixed;
+  bottom: 2.5%;
+  right: 5%;
+  display: inline-block;
+  clear: both;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.back-to-top a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.back-to-top a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright p {
+  display: inline-block;
+  clear: both;
+  color: white;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+}
