@@ -1,4 +1,4 @@
-# coffeejunkie
+# Coffee Junkie Cafe
 
 This is a dummy website for the Coffee Junkie coffeeshop. The project's goal is to practice the basics of HTML and CSS.
 
